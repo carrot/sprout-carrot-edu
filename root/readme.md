@@ -11,6 +11,10 @@
 - ???
 - get money
 
+### Getting Started
+
+Lessons are written in Markdown inside the `lessons` directory. To add a lesson, make a copy of an existing lesson, update the front matter, and add your Markdown content below.
+
 ### Deploying
 
 - If you just want to compile the production build, run `roots compile -e production` and it will build to public.

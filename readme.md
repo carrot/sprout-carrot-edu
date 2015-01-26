@@ -5,7 +5,7 @@ A template for creating small informational sites to educate our fellow Carrots.
 ### Installation
 
 - `npm install sprout -g`
-- `sprout add edu https://github.com/joshrowley/sprout-carrot-edu.git`
+- `sprout add edu https://github.com/carrot/sprout-carrot-edu.git`
 - `sprout init edu <name>`
 - follow the prompts
 
