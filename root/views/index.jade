@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+  header
+    h1: .wrap
+        span.logo
+        span.text <%= course_name %>
+
+  main: .wrap
+    ul
+      for lesson, i in site.lessons
+        li
+          a(href=lesson._url)
+            strong: |Lesson #{i+1}: 
+            | #{lesson.title}

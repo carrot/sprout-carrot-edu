@@ -1,0 +1,22 @@
+doctype html
+html
+
+  head
+    meta(charset='utf8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
+    meta(name='description', content='<%= description %>')
+    meta(name='author', content= "<%= author_name %>")
+    title <%= course_name %>
+
+    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/zenburn.min.css")
+    != css()
+
+    script(src="//use.typekit.net/pqr6zmn.js")
+    script.
+      try{Typekit.load();}catch(e){}
+    
+  body(id=_path.replace(/.*?\/(\w+)\.html$/,'$1'))
+    block content
+
+    script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js")
+    != js()

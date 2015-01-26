@@ -1,0 +1,75 @@
+---
+title: First Lesson
+description: |
+  This is the first lesson for this course. You can find the file generating this page inside the lessons directory of the project.
+author: <%= author_name %>
+quote: I was born to make mistakes, not to fake perfection
+quote_author: Drizzy Drake
+---
+
+extends _lesson.jade
+block lesson
+  :markdown
+    ## What is HTML?
+
+    During the MySpace days, we used [HTML][0] to send our pals cool messages on their profile [pages][1].  Today, we have a bunch of other languages to help us make more beautiful and modern websites. In memory of Tom, our class today we'll go over some HTML basics to make our own website + our own custom data visualization.
+
+    ## The Beginning
+
+    HTML consists of a bunch of tags that mean something. The most basic HTML code is here. These tags will always be there in an HTML document. To save an HTML document to your computer, just open a text file and save it with the ending .html . This is how the computer recognizes it's a web page file. Here are a few important tags(and here are all of them). So, let's get to it! Instructions to create your first web page:
+
+    Every HTML document begins with this basic template. Open your text editor and save file called "index.html" to your desktop. Then, add this text:
+
+    ```html
+    <html>
+      <head>
+        <title>My Homepage</title>
+      </head>
+    </html>
+    ```
+
+    Press the Lightening Key on the upper right hand side of your text editor and see what happens. Yay! You've created your first web page. Let's add some content.
+
+    - [Add an image.][2]
+    - [Add an link.][3]
+    - [Add an header.][4]
+
+    What if I want to make a table? The structure for tables in HTML looks like this. Let's try it out.:
+
+    ```html
+      <table>
+
+        <tr>
+          <td>This is a Cell</td>
+          <td>This is another Cell</td>
+        </tr>
+
+        <tr>
+          <td>This is a Cell</td>
+          <td>This is another Cell</td>
+        </tr>
+
+      </table>
+    ```
+
+    These are just a few HTML tags to help us gain a familiarity with using a text editor and understanding how code renders in your web browser. Next week, we (me + Tony + NPC + Brandon) will do a little more about other important HTML stuff and introduce some styling fun. Plus,talk about how data gets onto your webpage. If you can’t wait until our next session, you can go here and check out some free templates that you can play around with.
+
+    ## Let's play with Tableau
+
+    Okay, we are going to switch gears and talk about Tableau now. Tableau is a really amazing tool that a bunch of publications like the [New York Times][5] and [Vox][6] (o and kinda/sorta [Vice][7]) use to tell a story with their data. I wanna show you some basics today and later on we can start doing some other stuff so we can make cool social visualizations + insights on the Carrot blog.
+
+    Tableau can do a number of wonderful things (see [politics and Twitter][8], [#jesuischarlie][9], [cool foods][10] and [governmental requests for Facebook access][11]).  We can take data from spreadsheets or directly from databases and transform them into beautiful visualizations on Tableau with a few easy steps. To start, let's download [our first dataset][12].
+
+    [0]: http://skillcrush.com/2012/04/02/html/
+    [1]: http://www.freecodesource.com/myspace-codes/change-display-name
+    [2]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+    [3]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link
+    [4]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
+    [5]: http://www.nytimes.com/newsgraphics/2013/12/30/year-in-interactive-storytelling/#dataviz
+    [6]: http://www.vox.com/2014/12/26/7446733/data-visualization
+    [7]: http://thecreatorsproject.vice.com/tag/Data+Visualization
+    [8]: http://www.tableau.com/public/gallery/twitter-leading-indicator
+    [9]: http://www.tableau.com/public/gallery/je-suis-charlie
+    [10]: http://www.tableau.com/public/gallery/which-food-coolest
+    [11]: http://www.tableau.com/public/gallery/facebook039s-global-government-requests
+    [12]: https://data.cityofnewyork.us/Recreation/Directory-Of-Toilets-In-Public-Parks/hjae-yuav

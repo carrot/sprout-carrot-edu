@@ -1,0 +1,20 @@
+extends ../views/layout
+
+block content
+  #lesson
+    header
+      span.logo
+      h1= post.title
+      p by #{post.author}
+
+    .wrap
+      p.intro= post.description
+
+      #content
+        block lesson
+
+        .back: a(href="/") &laquo; Back to Lessons
+
+    footer
+      h3 &ldquo;#{post.quote}&rdquo;
+      h4 - #{post.quote_author}
